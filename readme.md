@@ -40,7 +40,7 @@ app.use(evercookie.backend({
   cachePath: '/evercookie_cache.php'
 }));
 //...
-``
+```
 
 # Test
 ```bash

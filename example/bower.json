@@ -1,0 +1,20 @@
+{
+  "name": "node-evercookie-example",
+  "version": "0.0.0",
+  "homepage": "https://github.com/truongsinh/node-evercookie",
+  "authors": [
+    "TruongSinh Tran-Nguyen <i@truongsinh.pro>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "evercookie": "git@github.com:truongsinh/evercookie.git#dev"
+  }
+}

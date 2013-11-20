@@ -26,7 +26,6 @@ describe('request PNG', function() {
           .get('/evercookie_png.php')
           .set('Cookie', 'evercookie_png=12345')
           .expect('Content-Type', 'image/png')
-          .expect('Last-Modified', 'Wed, 30 Jun 2010 21:36:48 GMT')
           .expect('Expires', 'Tue, 31 Dec 2030 23:30:45 GMT')
           .expect('Cache-Control', 'private, max-age=630720000')
           .expect(200)
@@ -79,10 +78,8 @@ describe('request Cache', function() {
         .get('/evercookie_cache.php')
         .set('Cookie', 'evercookie_cache=111')
         .expect('Content-Type', 'text/html')
-        .expect('Last-Modified', 'Wed, 30 Jun 2010 21:36:48 GMT')
         .expect('Expires', 'Tue, 31 Dec 2030 23:30:45 GMT')
         .expect('Cache-Control', 'private, max-age=630720000')
-        .expect('Last-Modified', 'Wed, 30 Jun 2010 21:36:48 GMT')
         .expect(200)
         .expect('111')
         .end(done);

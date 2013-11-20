@@ -55,7 +55,6 @@ module.exports = {
           var png = new Png(new Buffer(a), 200, 1);
           res.set({
             'Content-Type': 'image/png',
-            'Last-Modified': 'Wed, 30 Jun 2010 21:36:48 GMT',
             'Expires': 'Tue, 31 Dec 2030 23:30:45 GMT',
             'Cache-Control': 'private, max-age=630720000'
           });
@@ -92,7 +91,6 @@ module.exports = {
         if(cookieValue) {
           res.set({
             'Content-Type': 'text/html',
-            'Last-Modified': 'Wed, 30 Jun 2010 21:36:48 GMT',
             'Expires': 'Tue, 31 Dec 2030 23:30:45 GMT',
             'Cache-Control': 'private, max-age=630720000'
           });
