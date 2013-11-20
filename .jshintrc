@@ -1,0 +1,30 @@
+{
+  "bitwise": true,
+  "camelcase": false,
+  "curly": true,
+  "eqeqeq": true,
+  "es3":true,
+  "immed": true,
+  "indent": 2,
+  "latedef": true,
+  "newcap": true,
+  "noarg": true,
+  "noempty": true,
+  "nonew": false,
+  "plusplus": false,
+  "quotmark": "single",
+  "undef": true,
+  "unused": true,
+  "strict": true,
+  "trailing": true,
+  "maxcomplexity": 50,
+  "maxlen": 160,
+  "globalstrict": true,
+  "laxcomma": true,
+  "browser": true,
+  "node": true,
+  "globals": {
+    "app": false,
+    "angular": false
+  }
+}
