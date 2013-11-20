@@ -7,6 +7,7 @@ module.exports = {
       pngCookieName: 'evercookie_png',
       etagCookieName: 'evercookie_etag',
       cacheCookieName: 'evercookie_cache',
+      authPath: '/evercookie_auth.php',
       pngPath: '/evercookie_png.php',
       etagPath: '/evercookie_etag.php',
       cachePath: '/evercookie_cache.php'
@@ -24,6 +25,17 @@ module.exports = {
     function evercookieMiddlewareBackend(req, res, next) {
       var cookieValue;
       switch(req.path) {
+      case optionMap.authPath:
+        try{
+          cookieValue = new Buffer(req.headers.authorization.split(' ')[1], 'base64').toString().split(':')[0];
+        } catch(e){}
+        if(cookieValue){
+          res.send(cookieValue);
+          return;
+        }
+        res.setHeader('WWW-Authenticate', 'Basic');
+        res.send(401);
+        return;
       case optionMap.pngPath:
         /**
          * Port to NodeJS by TruongSinh <i@truongsinh.pro>

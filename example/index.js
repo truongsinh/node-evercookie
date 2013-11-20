@@ -1,6 +1,7 @@
 'use strict';
 var express = require('express');
-var evercookieMiddleware = require('evercookie');
+//var evercookieMiddleware = require('evercookie');
+var evercookieMiddleware = require('../index');
 
 var app = express();
 app.use(express.cookieParser());
