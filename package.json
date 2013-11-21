@@ -1,6 +1,6 @@
 {
   "name": "evercookie",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "This is a conenct/express middleware for evercookie. For more information, visit https://github.com/samyk/evercookie or https://github.com/senchalabs/connect",
   "main": "index.js",
   "scripts": {
@@ -17,19 +17,22 @@
     "express",
     "middleware"
   ],
-  "author": "TruongSinh Tran-Nguyen",
+  "author": {
+    "name": "TruongSinh Tran-Nguyen",
+    "email": "i@truongsinh.pro"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/truongsinh/node-evercookie/issues"
   },
   "devDependencies": {
-    "mocha": "~1.14.0",
-    "expect.js": "~0.2.0",
-    "supertest": "~0.8.1",
-    "express": "~3.4.4",
-    "png-js": "~0.1.1"
+    "mocha": "~1.14.x",
+    "expect.js": "~0.2.x",
+    "supertest": "~0.8.x",
+    "express": "~3.4.x",
+    "png-js": "~0.1.x"
   },
   "dependencies": {
-    "png": "~3.0.3"
+    "png": "~3.0.x"
   }
 }

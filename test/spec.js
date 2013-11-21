@@ -111,12 +111,12 @@ describe('request Etag', function() {
     );
   });
   describe('without Etag cookie', function() {
-    it('with If-None-Match header responds id both in Etag header and body', function(done) {
+    it('with If-None-Match header responds id only in Etag header', function(done) {
         request(app)
           .get('/evercookie_etag.php')
           .set('If-None-Match', '131')
-          .expect('131')
-          .expect(200)
+          .expect('Etag', '131')
+          .expect(304)
           .end(done);
       }
     );
@@ -127,5 +127,27 @@ describe('request Etag', function() {
           .end(done);
       }
     );
+  });
+});
+
+describe('request Basic Auth', function() {
+  describe('without Auth header', function() {
+    it('responds 304', function(done) {
+      request(app)
+        .get('/evercookie_auth.php')
+        .set('Authorization', 'Basic NTg5Og==')
+        .expect(200)
+        .expect('589')
+        .end(done);
+    });
+  });
+  describe('without Auth header', function() {
+    it('responds id in body', function(done) {
+      request(app)
+        .get('/evercookie_auth.php')
+        .expect(401)
+        .expect('WWW-Authenticate', 'Basic')
+        .end(done);
+    });
   });
 });

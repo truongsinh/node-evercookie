@@ -89,10 +89,9 @@ module.exports = {
         cookieValue = req.cookies[optionMap.etagCookieName];
         if(!cookieValue) {
           cookieValue = req.get('If-None-Match');
-        } else {
-          res.set('Etag', cookieValue);
         }
         if(cookieValue) {
+          res.set('Etag', cookieValue);
           res.send(cookieValue);
           return;
         }
