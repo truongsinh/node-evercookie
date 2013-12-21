@@ -3,65 +3,19 @@
 'use strict';
 var request = require('supertest');
 var express = require('express');
-var assert = require('assert');
-var Png = require('png-js');
 var evercookieMiddleware = require('../index.js');
 
 var app = express();
 app.use(express.cookieParser());
 app.use(evercookieMiddleware.backend());
 describe('request PNG', function() {
-  describe('without png cookie', function() {
-    it('responds 304', function(done) {
+    it('responds 201', function(done) {
         request(app)
           .get('/evercookie_png.php')
-          .expect(304)
+          .expect(201)
           .end(done);
       }
     );
-  });
-  describe('with png cookie', function() {
-    it('responds 200 with correct values and headers', function(done) {
-        request(app)
-          .get('/evercookie_png.php')
-          .set('Cookie', 'evercookie_png=12345')
-          .expect('Content-Type', 'image/png')
-          .expect('Expires', 'Tue, 31 Dec 2030 23:30:45 GMT')
-          .expect('Cache-Control', 'private, max-age=630720000')
-          .expect(200)
-          .parse( function (res, fn) {
-            res.on( 'data', function (chunk) {
-              res.data = chunk;
-            });
-            res.on( 'end', function () {
-              try {
-                fn( null, res.data  );
-              } catch ( err ) {
-                fn( err );
-              }
-            });
-          })
-          .end(function(err, res){
-            if(err){
-              done(err);
-              return;
-            }
-            var p = new Png(res.body);
-            p.decode(function(pixArray){
-              assert.strictEqual(String.fromCharCode(pixArray[0]), '1');
-              assert.strictEqual(String.fromCharCode(pixArray[1]), '2');
-              assert.strictEqual(String.fromCharCode(pixArray[2]), '3');
-              // pixArray[3] is 255, alpha value
-              assert.strictEqual(String.fromCharCode(pixArray[4]), '4');
-              assert.strictEqual(String.fromCharCode(pixArray[5]), '5');
-              // pix RGB value 0, or null value, terminates the string
-              assert.strictEqual(pixArray[6], 0);
-              done();
-            });
-          });
-      }
-    );
-  });
 });
 describe('request Cache', function() {
   describe('without cookie', function() {

@@ -1,6 +1,6 @@
 {
   "name": "evercookie",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "This is a conenct/express middleware for evercookie. For more information, visit https://github.com/samyk/evercookie or https://github.com/senchalabs/connect",
   "main": "index.js",
   "scripts": {
@@ -29,10 +29,6 @@
     "mocha": "~1.14.x",
     "expect.js": "~0.2.x",
     "supertest": "~0.8.x",
-    "express": "~3.4.x",
-    "png-js": "~0.1.x"
-  },
-  "dependencies": {
-    "png": "~3.0.x"
+    "express": "~3.4.x"
   }
 }
