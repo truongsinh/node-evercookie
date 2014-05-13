@@ -10,7 +10,7 @@ try {
     throw new Error('Neither express nor connect is available');
   }
 }
-var cookieParser = connect.cookieParser();
+var cookieParser = require('cookie-parser');
 var noop = function noop(){};
 module.exports = {
   backend: function evercookieMiddlewareBackendFactory(opts) {
