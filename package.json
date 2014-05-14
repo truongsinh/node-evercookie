@@ -32,6 +32,6 @@
     "express": "~3.4.x"
   },
   "dependencies": {
-    "cookie-parser": "^1.1.0"
+    "cookie-parser": "~1.1.0"
   }
 }
