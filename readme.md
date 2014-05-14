@@ -9,6 +9,15 @@ originally, PHPs for the server-side generation of cached PNGs and ETags.
 
 This middleware port original PHP script to Connect/Express JS
 
+# Node version support
+- 0.8
+- 0.10
+- 0.11
+
+# Express version support:
+- 3.x
+- 4.x
+
 # Install
 ```bash
 npm install --save evercookie
