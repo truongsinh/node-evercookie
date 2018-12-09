@@ -7,6 +7,7 @@
 [![Dependencies Status](https://david-dm.org/truongsinh/node-evercookie.svg)](https://david-dm.org/truongsinh/node-evercookie)
 [![DevDependencies Status](https://david-dm.org/truongsinh/node-evercookie/dev-status.svg)](https://david-dm.org/truongsinh/node-evercookie?type=dev)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]()
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 [Express](http://expressjs.com) is a sinatra inspired web development framework for node.js, insanely fast, flexible, and simple.
 [Evercookie](http://samy.pl/evercookie/) is a Javascript API that produces extremely persistent cookies in a browser.
