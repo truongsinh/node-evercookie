@@ -11,3 +11,4 @@ env:
   - EXPRESS_VERSION=">5.0.0-alpha"
 before_script:
   - npm i express@$EXPRESS_VERSION
+after_success: npm run coverage

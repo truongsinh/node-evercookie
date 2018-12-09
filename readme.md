@@ -1,6 +1,12 @@
 # Evercookie Middleware for Connect/Express JS
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]() [![npm version](https://img.shields.io/npm/v/evercookie.svg?style=flat)](https://www.npmjs.com/package/evercookie) [![Build Status](https://travis-ci.org/truongsinh/node-evercookie.png?branch=master)](https://travis-ci.org/truongsinh/node-evercookie) [![Coverage Status](https://img.shields.io/coveralls/truongsinh/evercookie/master.svg?style=flat)](https://coveralls.io/github/truongsinh/node-evercookie?branch=master) [![Dependencies Status](https://david-dm.org/truongsinh/node-evercookie.svg)]() [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]()
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]()
+[![npm version](https://img.shields.io/npm/v/evercookie.svg?style=flat)](https://www.npmjs.com/package/evercookie)
+[![Build Status](https://travis-ci.org/truongsinh/node-evercookie.svg?branch=master)](https://travis-ci.org/truongsinh/node-evercookie)
+[![Coverage Status](https://img.shields.io/coveralls/truongsinh/node-evercookie/master.svg?style=flat)](https://coveralls.io/github/truongsinh/node-evercookie?branch=master)
+[![Dependencies Status](https://david-dm.org/truongsinh/node-evercookie.svg)](https://david-dm.org/truongsinh/node-evercookie)
+[![DevDependencies Status](https://david-dm.org/truongsinh/node-evercookie/dev-status.svg)](https://david-dm.org/truongsinh/node-evercookie?type=dev)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]()
 
 [Express](http://expressjs.com) is a sinatra inspired web development framework for node.js, insanely fast, flexible, and simple.
 [Evercookie](http://samy.pl/evercookie/) is a Javascript API that produces extremely persistent cookies in a browser.
