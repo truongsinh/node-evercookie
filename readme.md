@@ -1,6 +1,6 @@
 # Evercookie Middleware for Connect/Express JS
 
-[![Build Status](https://travis-ci.org/truongsinh/node-evercookie.png?branch=master)](https://travis-ci.org/truongsinh/node-evercookie)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]() [![npm version](https://img.shields.io/npm/v/evercookie.svg?style=flat)](https://www.npmjs.com/package/evercookie) [![Build Status](https://travis-ci.org/truongsinh/node-evercookie.png?branch=master)](https://travis-ci.org/truongsinh/node-evercookie) [![Coverage Status](https://img.shields.io/coveralls/truongsinh/evercookie/master.svg?style=flat)](https://coveralls.io/github/truongsinh/node-evercookie?branch=master) [![Dependencies Status](https://david-dm.org/truongsinh/node-evercookie.svg)]() [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]()
 
 [Express](http://expressjs.com) is a sinatra inspired web development framework for node.js, insanely fast, flexible, and simple.
 [Evercookie](http://samy.pl/evercookie/) is a Javascript API that produces extremely persistent cookies in a browser.
@@ -10,13 +10,14 @@ originally, PHPs for the server-side generation of cached PNGs and ETags.
 This middleware port original PHP script to Connect/Express JS
 
 # Node version support
-- 0.8
-- 0.10
-- 0.11
+- 6
+- 8
+- 10
+- 11
 
 # Express version support:
-- 3.x
 - 4.x
+- 5.x
 
 # Install
 ```bash
@@ -24,14 +25,15 @@ npm install --save evercookie
 ```
 
 # Usage
-Evercookie backend middleware needs cookie, thus `express.cookieParser()` middleware must come before Evercookie backend middleware.
+Evercookie backend middleware needs cookie, thus `cookieParser()` middleware must come before Evercookie backend middleware.
 In addition, express server must serve front end assets, such as index.html and evercookie.js as well.
 ```js
 var express = require('express');
 var evercookie = require('evercookie');
+const cookieParser = require('cookie-parser')
 
 var app = express();
-app.use(express.cookieParser());
+app.use(cookieParser());
 app.use(evercookie.backend());
 app.use(express.cookieParser());
 app.use(express.static(__dirname + '/public')); // be careful, you may want to use path.join instead!

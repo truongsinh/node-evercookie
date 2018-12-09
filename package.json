@@ -1,6 +1,6 @@
 {
   "name": "evercookie",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "This is a conenct/express middleware for evercookie. For more information, visit https://github.com/samyk/evercookie or https://github.com/senchalabs/connect",
   "main": "index.js",
   "scripts": {
@@ -25,13 +25,14 @@
   "bugs": {
     "url": "https://github.com/truongsinh/node-evercookie/issues"
   },
-  "devDependencies": {
-    "mocha": "~1.14.x",
-    "expect.js": "~0.2.x",
-    "supertest": "~0.8.x",
-    "express": "~3.4.x"
+  "engines": {
+    "node": "6 || 8 || 10 || 11"
   },
-  "dependencies": {
-    "cookie-parser": "~1.1.0"
-  }
+  "devDependencies": {
+    "cookie-parser": "^1.4.3",
+    "express": "4.x || 5.x",
+    "mocha": "^5.2.0",
+    "supertest": "^3.3.0"
+  },
+  "dependencies": {}
 }

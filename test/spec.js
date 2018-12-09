@@ -3,10 +3,11 @@
 'use strict';
 var request = require('supertest');
 var express = require('express');
+const cookieParser = require('cookie-parser')
 var evercookieMiddleware = require('../index.js');
 
 var app = express();
-app.use(express.cookieParser());
+app.use(cookieParser());
 app.use(evercookieMiddleware.backend());
 describe('request PNG', function() {
     it('responds 201', function(done) {
@@ -31,7 +32,7 @@ describe('request Cache', function() {
       request(app)
         .get('/evercookie_cache.php')
         .set('Cookie', 'evercookie_cache=111')
-        .expect('Content-Type', 'text/html')
+        .expect('Content-Type', 'text/html; charset=utf-8')
         .expect('Expires', 'Tue, 31 Dec 2030 23:30:45 GMT')
         .expect('Cache-Control', 'private, max-age=630720000')
         .expect(200)
