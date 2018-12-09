@@ -10,13 +10,14 @@ originally, PHPs for the server-side generation of cached PNGs and ETags.
 This middleware port original PHP script to Connect/Express JS
 
 # Node version support
-- 0.8
-- 0.10
-- 0.11
+- 6
+- 8
+- 10
+- 11
 
 # Express version support:
-- 3.x
 - 4.x
+- 5.x
 
 # Install
 ```bash
@@ -24,14 +25,15 @@ npm install --save evercookie
 ```
 
 # Usage
-Evercookie backend middleware needs cookie, thus `express.cookieParser()` middleware must come before Evercookie backend middleware.
+Evercookie backend middleware needs cookie, thus `cookieParser()` middleware must come before Evercookie backend middleware.
 In addition, express server must serve front end assets, such as index.html and evercookie.js as well.
 ```js
 var express = require('express');
 var evercookie = require('evercookie');
+const cookieParser = require('cookie-parser')
 
 var app = express();
-app.use(express.cookieParser());
+app.use(cookieParser());
 app.use(evercookie.backend());
 app.use(express.cookieParser());
 app.use(express.static(__dirname + '/public')); // be careful, you may want to use path.join instead!

@@ -38,21 +38,21 @@ module.exports = {
       switch(req.path) {
       case optionMap.authPath:
         try{
-          cookieValue = new Buffer(req.headers.authorization.split(' ')[1], 'base64').toString().split(':')[0];
+          cookieValue = Buffer.from(req.headers.authorization.split(' ')[1], 'base64').toString().split(':')[0];
         } catch(e){}
         if(cookieValue){
           res.send(cookieValue);
           return;
         }
         res.setHeader('WWW-Authenticate', 'Basic');
-        res.send(401);
+        res.sendStatus(401);
         return;
       case optionMap.pngPath:
         /**
          * PNG cache is technically no difference than text cache, but adds much more overhead to encode and decode.
          * Return 201 No content
          */
-        res.send(201);
+        res.sendStatus(201);
         return;
       case optionMap.etagPath:
         /**
@@ -74,7 +74,7 @@ module.exports = {
           res.send(cookieValue);
           return;
         }
-        res.send(304);
+        res.sendStatus(304);
         return;
       case optionMap.cachePath:
         // cookieParser is sync, and check req.cookies internally
@@ -89,7 +89,7 @@ module.exports = {
           res.send(cookieValue);
           return;
         }
-        res.send(304);
+        res.sendStatus(304);
         return;
       default:
         next();
