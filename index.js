@@ -10,8 +10,6 @@ try {
     throw new Error('Neither express nor connect is available');
   }
 }
-var cookieParser = require('cookie-parser');
-var noop = function noop(){};
 module.exports = {
   backend: function evercookieMiddlewareBackendFactory(opts) {
     opts = opts || {};
@@ -63,8 +61,6 @@ module.exports = {
          * using the Etag HTTP header, as well as If-None-Match to check
          * if the user has been tagged before.
          */
-        // cookieParser is sync, and check req.cookies internally
-        cookieParser(req, res, noop);
         cookieValue = req.cookies[optionMap.etagCookieName];
         if(!cookieValue) {
           cookieValue = req.get('If-None-Match');
@@ -77,8 +73,6 @@ module.exports = {
         res.sendStatus(304);
         return;
       case optionMap.cachePath:
-        // cookieParser is sync, and check req.cookies internally
-        cookieParser(req, res, noop);
         cookieValue = req.cookies[optionMap.cacheCookieName];
         if(cookieValue) {
           res.set({
