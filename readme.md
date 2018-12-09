@@ -60,7 +60,7 @@ npm test
 
 # Acknowledgement
 - [Samy Kamkar] (https://github.com/samyk) for his awesome idea and implementation of [Evercookie](http://samy.pl/evercookie/)
-- [TJ Holowaychuk] (https://github.com/samyk) for his awesome [Express framework](http://expressjs.com/)
+- [TJ Holowaychuk] (https://github.com/tj) for his awesome [Express framework](http://expressjs.com/)
 - Ryan Dahl, Joyent and the whole Node.js community
 
 # License
