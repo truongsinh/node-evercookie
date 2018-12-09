@@ -15,22 +15,19 @@ originally, PHPs for the server-side generation of cached PNGs and ETags.
 
 This middleware port original PHP script to Connect/Express JS
 
-# Node version support
-- 6
-- 8
-- 10
-- 11
+# Support
+- Node: 6, 8, 10, 11
+- Express: 4.x, 5.x
+- See detail at [![Build Status](https://travis-ci.org/truongsinh/node-evercookie.svg?branch=master)](https://travis-ci.org/truongsinh/node-evercookie)
 
-# Express version support:
-- 4.x
-- 5.x
+# Usage
 
-# Install
+## Install
 ```bash
 npm install --save evercookie
 ```
 
-# Usage
+## In your code
 Evercookie backend middleware needs cookie, thus `cookieParser()` middleware must come before Evercookie backend middleware.
 In addition, express server must serve front end assets, such as index.html and evercookie.js as well.
 ```js
@@ -45,7 +42,7 @@ app.use(express.cookieParser());
 app.use(express.static(__dirname + '/public')); // be careful, you may want to use path.join instead!
 ```
 
-# Settings
+## Settings
 Customized settings can be used, but up to this moment, it makes no sense to change the dafault one,
 as all these values are hardcoded in (frontend) `evercookie.js`.
 ```js
@@ -64,9 +61,9 @@ app.use(evercookie.backend({
 # Contributing
 - [Contrubuting guideline](./CONTRIBUTING.md)
 - [Code of Conduct](./CODE_OF_CONDUCT.md)
-- [MIT licensed](./LICENSE).
+- [MIT licensed](./LICENSE)
 
 # Acknowledgement
-- [Samy Kamkar] (https://github.com/samyk) for his awesome idea and implementation of [Evercookie](http://samy.pl/evercookie/)
-- [TJ Holowaychuk] (https://github.com/tj) for his awesome [Express framework](http://expressjs.com/)
+- [Samy Kamkar](https://github.com/samyk) for his awesome idea and implementation of [Evercookie](http://samy.pl/evercookie/)
+- [TJ Holowaychuk](https://github.com/tj) for his awesome [Express framework](http://expressjs.com/)
 - Ryan Dahl, Joyent and the whole Node.js community
