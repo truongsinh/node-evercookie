@@ -1,24 +1,16 @@
 unit_test_task:
   container:
-    matrix:
-      image: node:latest
-      image: node:lts
-      image: node:6
+    image: node:latest
   env:
-    global:
-      CC_TEST_REPORTER_ID: "ccc2b02af02ab68ff02cf071123c6cdda4ecdd239312ab0c1e09356041529164"
-    matrix:
-      EXPRESS_VERSION: "4.x"
-      EXPRESS_VERSION: ">5.0.0-alpha"
+    CC_TEST_REPORTER_ID: "ccc2b02af02ab68ff02cf071123c6cdda4ecdd239312ab0c1e09356041529164"
   node_modules_cache:
     folder: node_modules
     fingerprint_script: cat package-lock.json
     populate_script:
       - npm ci
-      - npm i express@$EXPRESS_VERSION\
   prepare_codeclimate_script:
     - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
     - chmod +x ./cc-test-reporter
     - ./cc-test-reporter before-build
-  coverage_script: ./cc-test-reporter after-build
   test_script: npm test
+  coverage_script: ./cc-test-reporter after-build
