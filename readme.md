@@ -5,6 +5,7 @@
 [![Build Status](https://travis-ci.org/truongsinh/node-evercookie.svg?branch=master)](https://travis-ci.org/truongsinh/node-evercookie)
 [![Build Status](https://api.cirrus-ci.com/github/truongsinh/node-evercookie.svg)](https://cirrus-ci.com/github/truongsinh/node-evercookie)
 [![Maintainability](https://api.codeclimate.com/v1/badges/7fc8c5c2a043171b8a82/maintainability)](https://codeclimate.com/github/truongsinh/node-evercookie/maintainability)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/truongsinh/node-evercookie.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/truongsinh/node-evercookie/alerts/)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/7fc8c5c2a043171b8a82/test_coverage)](https://codeclimate.com/github/truongsinh/node-evercookie/test_coverage)
 [![Dependencies Status](https://david-dm.org/truongsinh/node-evercookie.svg)](https://david-dm.org/truongsinh/node-evercookie)
 [![DevDependencies Status](https://david-dm.org/truongsinh/node-evercookie/dev-status.svg)](https://david-dm.org/truongsinh/node-evercookie?type=dev)
