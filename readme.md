@@ -3,6 +3,7 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]()
 [![npm version](https://img.shields.io/npm/v/evercookie.svg?style=flat)](https://www.npmjs.com/package/evercookie)
 [![Build Status](https://travis-ci.org/truongsinh/node-evercookie.svg?branch=master)](https://travis-ci.org/truongsinh/node-evercookie)
+[![Build Status](https://api.cirrus-ci.com/github/truongsinh/node-evercookie.svg)](https://cirrus-ci.com/github/truongsinh/node-evercookie)
 [![Maintainability](https://api.codeclimate.com/v1/badges/7fc8c5c2a043171b8a82/maintainability)](https://codeclimate.com/github/truongsinh/node-evercookie/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/7fc8c5c2a043171b8a82/test_coverage)](https://codeclimate.com/github/truongsinh/node-evercookie/test_coverage)
 [![Dependencies Status](https://david-dm.org/truongsinh/node-evercookie.svg)](https://david-dm.org/truongsinh/node-evercookie)
@@ -18,9 +19,9 @@ originally, PHPs for the server-side generation of cached PNGs and ETags.
 This middleware port original PHP script to Connect/Express JS
 
 # Support
-- Node: 6, 8, 10, 11
+- Node: 6 - 11
 - Express: 4.x, 5.x
-- See detail at [![Build Status](https://travis-ci.org/truongsinh/node-evercookie.svg?branch=master)](https://travis-ci.org/truongsinh/node-evercookie)
+- See detail at [![Build Status](https://api.cirrus-ci.com/github/truongsinh/node-evercookie.svg)](https://cirrus-ci.com/github/truongsinh/node-evercookie)
 
 # Usage
 
