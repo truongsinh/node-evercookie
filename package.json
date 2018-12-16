@@ -4,8 +4,7 @@
   "description": "This is a conenct/express middleware for evercookie. For more information, visit https://github.com/samyk/evercookie or https://github.com/senchalabs/connect",
   "main": "index.js",
   "scripts": {
-    "test": "nyc --reporter=html --reporter=text mocha",
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "test": "nyc --reporter=html  --reporter=lcov mocha"
   },
   "repository": {
     "type": "git",
@@ -31,7 +30,6 @@
   },
   "devDependencies": {
     "cookie-parser": "^1.4.3",
-    "coveralls": "^3.0.2",
     "express": "4.x || 5.x",
     "mocha": "^5.2.0",
     "nyc": "^13.1.0",
