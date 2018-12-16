@@ -1,9 +1,9 @@
 unit_test_task:
   container:
     matrix:
-      image: node:latest
-      image: node:lts
-      image: node:6
+      - image: node:latest
+      - image: node:lts
+      - image: node:6
   env:
     CC_TEST_REPORTER_ID: "ccc2b02af02ab68ff02cf071123c6cdda4ecdd239312ab0c1e09356041529164"
   node_modules_cache:
