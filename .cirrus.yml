@@ -1,3 +1,6 @@
+env:
+  CC_TEST_REPORTER_ID: "ccc2b02af02ab68ff02cf071123c6cdda4ecdd239312ab0c1e09356041529164"
+
 unit_test_task:
   container:
     matrix:
@@ -5,12 +8,16 @@ unit_test_task:
       - image: node:lts
       - image: node:6
   env:
-    CC_TEST_REPORTER_ID: "ccc2b02af02ab68ff02cf071123c6cdda4ecdd239312ab0c1e09356041529164"
+    matrix:
+      - EXPRESS_VERSION: "4.x"
+      - EXPRESS_VERSION: ">5.0.0-alpha"
   node_modules_cache:
     folder: node_modules
     fingerprint_script: cat package-lock.json
     populate_script:
       - npm ci
+  matrix_express_version_script:
+    - npm i express@$EXPRESS_VERSION
   prepare_codeclimate_script:
     - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
     - chmod +x ./cc-test-reporter
