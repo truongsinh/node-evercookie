@@ -1,16 +1,20 @@
 # Evercookie Middleware for Connect/Express JS
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]()
+
+[this repo]: (https://github.com/truongsinh/node-evercookie/)
+
+[![Licence](https://img.shields.io/github/license/truongsinh/node-evercookie.svg)][this repo]
 [![npm version](https://img.shields.io/npm/v/evercookie.svg?style=flat)](https://www.npmjs.com/package/evercookie)
-[![Build Status](https://travis-ci.org/truongsinh/node-evercookie.svg?branch=master)](https://travis-ci.org/truongsinh/node-evercookie)
 [![Build Status](https://api.cirrus-ci.com/github/truongsinh/node-evercookie.svg)](https://cirrus-ci.com/github/truongsinh/node-evercookie)
 [![Maintainability](https://api.codeclimate.com/v1/badges/7fc8c5c2a043171b8a82/maintainability)](https://codeclimate.com/github/truongsinh/node-evercookie/maintainability)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/truongsinh/node-evercookie.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/truongsinh/node-evercookie/alerts/)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/7fc8c5c2a043171b8a82/test_coverage)](https://codeclimate.com/github/truongsinh/node-evercookie/test_coverage)
 [![Dependencies Status](https://david-dm.org/truongsinh/node-evercookie.svg)](https://david-dm.org/truongsinh/node-evercookie)
 [![DevDependencies Status](https://david-dm.org/truongsinh/node-evercookie/dev-status.svg)](https://david-dm.org/truongsinh/node-evercookie?type=dev)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]()
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)][this repo]
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)][this repo]
+<!-- [![OpenCollective](https://opencollective.com/node-evercookie/backers/badge.svg)](#backers)  -->
+<!-- [![OpenCollective](https://opencollective.com/node-evercookie/sponsors/badge.svg)](#sponsors) -->
 
 [Express](http://expressjs.com) is a sinatra inspired web development framework for node.js, insanely fast, flexible, and simple.
 [Evercookie](http://samy.pl/evercookie/) is a Javascript API that produces extremely persistent cookies in a browser.
@@ -66,6 +70,8 @@ app.use(evercookie.backend({
 - [Contrubuting guideline](./CONTRIBUTING.md)
 - [Code of Conduct](./CODE_OF_CONDUCT.md)
 - [MIT licensed](./LICENSE)
+- [![Become a Backer](https://opencollective.com/node-evercookie/tiers/backer.svg?avatarHeight=36)](https://opencollective.com/node-evercookie) or [![Become a Sponsor](https://opencollective.com/node-evercookie/tiers/sponsor.svg?avatarHeight=36)](https://opencollective.com/node-evercookie)
+- [Spread word on Twitter](https://twitter.com/intent/tweet?text=%23evercookie%20on%20%23nodejs&url=https%3A%2F%2Fgithub.com%2Ftruongsinh%2Fnode-evercookie%2F&via=truongsinhtn)
 
 # Acknowledgement
 - [Samy Kamkar](https://github.com/samyk) for his awesome idea and implementation of [Evercookie](http://samy.pl/evercookie/)
