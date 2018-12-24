@@ -4,7 +4,8 @@
   "description": "This is a conenct/express middleware for evercookie. For more information, visit https://github.com/samyk/evercookie or https://github.com/senchalabs/connect",
   "main": "index.js",
   "scripts": {
-    "test": "nyc --reporter=html  --reporter=lcov mocha"
+    "test": "nyc --reporter=html  --reporter=lcov mocha",
+    "postinstall": "opencollective-postinstall"
   },
   "repository": {
     "type": "git",
@@ -35,5 +36,12 @@
     "nyc": "^13.1.0",
     "supertest": "^3.3.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "opencollective-postinstall": "^2.0.1",
+    "opencollective": "^1.0.3"
+  },
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/node-evercookie"
+  }
 }
