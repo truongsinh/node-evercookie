@@ -70,7 +70,7 @@ app.use(evercookie.backend({
 - [Contrubuting guideline](./CONTRIBUTING.md)
 - [Code of Conduct](./CODE_OF_CONDUCT.md)
 - [MIT licensed](./LICENSE)
-- [![Become a Backer](https://opencollective.com/node-evercookie/tiers/backer.svg?avatarHeight=36)](https://opencollective.com/node-evercookie) or [![Become a Sponsor](https://opencollective.com/node-evercookie/tiers/sponsor.svg?avatarHeight=36)](https://opencollective.com/node-evercookie)
+- [![Become a Backer](https://opencollective.com/node-evercookie/tiers/backer.svg?avatarHeight=36)](https://opencollective.com/node-evercookie) or [![Become a Sponsor](https://opencollective.com/node-evercookie/tiers/sponsor.svg?avatarHeight=36)](https://opencollective.com/node-evercookie) [![Greenkeeper badge](https://badges.greenkeeper.io/truongsinh/node-evercookie.svg)](https://greenkeeper.io/)
 - [Spread word on Twitter](https://twitter.com/intent/tweet?text=%23evercookie%20on%20%23nodejs&url=https%3A%2F%2Fgithub.com%2Ftruongsinh%2Fnode-evercookie%2F&via=truongsinhtn)
 
 # Acknowledgement

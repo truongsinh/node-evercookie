@@ -10,6 +10,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "evercookie": "~0.0.x"
+    "evercookie": "~1.0.1"
   }
 }
