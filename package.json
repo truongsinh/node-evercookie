@@ -32,9 +32,9 @@
   "devDependencies": {
     "cookie-parser": "^1.4.3",
     "express": "4.x || 5.x",
-    "mocha": "^5.2.0",
-    "nyc": "^13.1.0",
-    "supertest": "^3.3.0"
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1",
+    "supertest": "^4.0.2"
   },
   "dependencies": {
     "opencollective-postinstall": "^2.0.1",
